@@ -1,0 +1,1250 @@
+* button, a{
+    user-select: none;
+   
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.signContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height:100vh;
+    justify-content: center;
+    padding-left: 8%;
+    user-select: none;
+   
+   
+}
+.logoText{
+    display: flex;
+    justify-content: flex-start;
+    justify-content: center;
+    gap: 8px;
+    width: fit-content;
+    text-align: center;
+}
+.noteicon{
+    height:24px;
+    width: 24px;
+    fill: #8b2fc9;
+}
+#loadId{
+    width: 100%;
+    height: 100vh;
+    background-color: snow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logoNam{
+    text-align: center;
+    font-size:1.6em;
+    font-weight: 650;
+    color: #8b2fc9;
+}
+#ctngoo{
+    font-weight: 600;
+}
+
+.signBtn{
+    display: flex;
+    gap: 15px;
+    background-color: #262626;
+    border-radius: 16px;
+    width: fit-content;
+    padding: 13px 3%;
+    cursor: pointer;
+    margin-top: 1pc;
+    justify-content: center;
+    pointer-events: all;
+    color: #fff;
+}
+.signBtnNone{
+    display: flex;
+    gap: 15px;
+    background-color: darkgrey;
+    border-radius: 16px;
+    width: fit-content;
+    padding: 13px 3%;
+    cursor: pointer;
+    margin-top: 1pc;
+    justify-content: center;
+    pointer-events: none;
+    color: grey;
+}
+.signBtn:hover{
+    background-color: #262626e7;
+}
+#tagline{
+    max-width: 30pc;
+    color: #262626;
+    font-weight: 500;
+    font-size: 100%;
+}
+@media screen and (max-width: 500px){
+    .signContainer{
+        align-items: center;
+        padding-left: 0%;
+    }
+    #tagline{
+        font-size: 90%;
+        text-align: center;
+        width: 80%;
+    }
+    .signBtn{
+        padding: 13px 5%
+    }
+}
+/* .................................. ........................... dashboard*/
+.dashboard{
+    padding: 0 1.5pc;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.sec1, .sec3{
+    display: flex;
+    justify-content: space-between;
+}
+.subSec1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.noteicondash{
+    height:25px;
+    width:18px;
+    fill: grey;
+}
+.profileImg{
+    width: 35px;
+    height:35px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileImg img{
+    width: 100%;
+    height: 100%;
+}
+#dashTitle{
+    color: #262626;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+#dashName{
+    color: #333;
+    font-weight: 600;
+    max-width: 7pc;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.subSec2{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+}
+.sub1Div{
+    display: flex;
+    gap: 4px;
+    color: #4c5c68;
+    user-select: none;
+    cursor: pointer;
+}
+.sub1Div:hover{
+    font-weight: 500;
+    color: black;
+}
+.sub1Div:hover > .listboardsvg{
+    fill: black;
+}
+.listboardsvg{
+    width: 12px;
+    height:12px;
+    fill: #B197FC;
+    transition: fill .2s linear;
+    text-decoration: #8b2fc9;
+}
+#list, #board{
+    transition: color .2s ease;
+    text-decoration: #8b2fc9;
+    
+}
+.sub1Div.active{
+    font-weight: 700;
+    color: black;
+}
+.sub1Div.active .listboardsvg{
+    fill: black;
+}
+.boardicon{
+    width:10.8px;
+}
+.logoutdiv, #login, .logoutdivMobile, .loginmobile{
+    background-color: rgb(246, 239, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 10px;
+    padding: 3px 10px;
+    border: 1px solid rgb(243, 222, 226);
+    cursor: pointer;
+    user-select: none;
+}
+.logoutdiv:hover, #login:hover{
+    background-color: rgb(241, 229, 231);
+    transition: .3s ease;
+}
+.exiticon{
+    height:25px;
+    width: 12px;
+    transform: rotate(180deg);
+    fill: black;
+}
+#logt{
+    font-size: small;
+    font-weight: 600;
+}
+#login{
+    padding: 3px 20px;
+    font-weight: 500;
+}
+
+.sec3{
+    margin-top: .5pc;
+}
+.subSec3{
+    display: flex;
+    gap:10px;
+}
+.subsecFilter{
+    display: flex;
+    gap: 10px;
+}
+.subSecDIV{
+    display: flex;
+    /* gap:10px; */
+    justify-content: space-between;
+    align-items:center;
+    color: #4c5c68;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid grey;
+    height: fit-content;
+    padding: 0 8px;
+    position: relative;
+    width: 5.5pc;
+    position: relative;
+}
+.filCatBox{
+    position: absolute;
+    top: 2.2pc;
+    left: 0pc;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 244, 246);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 1;
+    gap: 3px;
+    border-radius: 10px;
+}
+#filtrWork, #filtrPrsnl{
+    color: black;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 12px 35px 12px 10px;
+    border-radius: 10px;
+}
+#filtrWork:hover, #filtrPrsnl:hover{
+    background-color: rgb(243, 240, 240);
+}
+#clrFiltr{
+    width: 25px;
+    height:25px;
+    fill: #e63946;
+    transition: transform .5s ease;
+    margin-left: -5px;
+    cursor: pointer;
+}
+.makeBold{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+}
+.cancelclrFiltr{
+    transform: scale(0);
+    transition: transform .3s ease;
+    cursor: pointer;
+}
+.subSecDIV p, .subSecDIV label{
+    font-size: .75em;
+    font-weight: 500;
+    padding: 5px 6px;
+    cursor: pointer;
+}
+.arrowCat, .arrowDate{
+    font-size: .75em;
+    color: #4c5c68;
+    transition: transform .2s ease;
+    transform: rotate(270deg);
+}
+.rotCatfilter{
+    transform: rotate(90deg);
+}
+#sort{
+    font-size: .9em;
+    color: #4c5c68;
+}
+.search{
+    background-color: #f6f6f6;
+    width: max-content;
+    display: flex;
+    padding: 7px;
+    align-items: center;
+    border-radius: 20px;
+    transition: box-shadow .2s ease;
+    box-shadow: 0 0 2px rgba(0,0,0,.75);
+}
+.search:focus-within{
+    background-color: #f1f1f1;
+}
+.search-input{
+    margin-left: 10px;
+    color: #333333;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.search-input::placeholder, .searchIcon{
+    color:rgba(0,0,0,0.5);
+    fill:rgba(0,0,0,0.5);
+}
+.searchIcon{
+    width: 20px;
+    height: 20px;
+}
+.search-addtask{
+    display: flex;
+    gap: 18px;
+}
+#addTask{
+    cursor: pointer;
+    background-color: #6b0da6;
+    font-size: smaller;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 10px 30px;
+    height: fit-content;
+    user-select: none;
+}
+#addTask:hover{
+    background-color: #8227ba;
+}
+/* ..........................section 2 */
+.section2{
+    border-top: 1px solid lightgrey;
+    padding: .5pc 1pc;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 2pc;
+}
+.tasksHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
+    font-weight:500;
+}
+#leftDue{
+    margin-left: -1pc;
+}
+.addTskInputSelect{
+    max-height: 30px;
+}
+@media screen and (min-width:1400px) {
+    .tasksHead{
+        width: 87%;
+    }
+    #leftDue{
+        margin-left: -1pc;
+    }
+}
+.section2Sub2, .cmpltd2Sub2, .prog2Sub2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(211, 211, 211, 0.233);
+    margin-bottom: 1.5pc;
+    padding-bottom: 1pc;
+}
+.section2Sub2, .prog2Sub2, .cmpltd2Sub2{
+    height: 100%;
+    min-height:50vh;
+    overflow: auto;
+}
+.hidesection2Sub2, .hidesectionCMPLTD, .hidesectionprog{
+    height: 30px;
+    overflow: hidden;
+}
+
+#todoHead{
+    --border-top-left-radius: 10px;
+    --border-top-right-radius: 10px;
+    --padding: .3pc .8pc;
+
+
+    border-top-right-radius: var(--border-top-right-radius);
+    border-top-left-radius: var(--border-top-left-radius);
+    padding: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#Sec2catHead{
+    font-weight: 700;
+    font-size: small;
+}
+.todoArr{
+    transform: rotate(90deg);
+    font-size: 15px;
+}
+.todoArrowMove, .progArrowMove, .CmpltdArrowMove{
+    transform: rotate(-90deg);
+    cursor: pointer;
+    user-select: none;
+}
+.plusAddCont{
+    padding: 0 .5pc .5pc 4pc;
+}
+#plusAdd{
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+    width: fit-content;
+}
+.plusIcon{
+    width: 14px;
+    height:14px;
+    fill: #333333;
+}
+#sec2Addtask{
+    font-weight: 600;
+    font-size: smaller;
+    width: fit-content;
+    user-select: none;
+}
+.addtaskInput{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    padding:.5pc 0 2pc 0;
+    position: relative;
+}
+.addtaskInput::after{
+    content: '';
+    width: 117.5%;
+    border-top: 1px solid lightgrey;
+    position: absolute;
+    top:0px;
+}
+.addtaskInput input:not(.writetask), .addtaskInput select{
+    height: 100%;
+    padding: .5pc .2pc;
+    border: none;
+    outline: none;
+    font-size: 10px;
+    font-weight:500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 10px;
+}
+#tsknameMain, .addtaskCancel{
+    width: 35%;
+}
+.addtaskCancel{
+    display: flex;
+    flex-direction: column;
+}
+.addcancelsub{
+    display: flex;
+    gap: 12px;
+    font-weight: 600;
+    justify-content: start;
+    align-items: center;
+    font-size: 15px;
+    padding: 0 4pc;
+    margin-top: 1pc;
+    user-select: none;
+}
+ #entrKey{
+    display: flex;
+    gap: 10px;
+    background-color: #6b0da6;
+    color: #fff;
+ }
+ #cnclTas, #entrKey{
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 3px 12px;
+ }
+ #cnclTas:hover{
+    background-color: rgb(235, 235, 235);
+    transition: .2s ease;
+ }
+.writetask{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: .5pc .5pc .5pc 4pc;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+}
+/* ....................render tasks */
+#editEchTashIcon, .todoArr{
+    cursor: pointer;
+    user-select: none;
+}
+#editEchTashIcon, #checkColn{
+    width: 15px;
+    height:15px;
+}
+.tickCircle, .greenTick{
+    width: 15px;
+    height:20px;
+}
+.tickCircle{
+    fill: grey;
+}
+#checkColn{
+    fill: grey;
+    transform: rotate(90deg);
+}
+#checkColnDiv{
+    display: flex;
+}
+.renderTasks{
+    --padding: .3pc .8pc;    
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+    width: 100%;
+    justify-content: space-between;
+    border-top: 1px solid lightgrey;
+    font-weight: 500;
+}
+.inptCheck{
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+.inptCheck input{
+   cursor: pointer;
+   height:15px;
+   width: 15px;
+}
+
+
+
+#renTitle{
+    width:100%;
+    max-height: 70px;
+    padding: .5pc;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.txtShow{
+    width:8pc;
+    text-align: center;
+    padding: .3pc 1pc;
+}
+.todoHeadTo-Do{
+    background-color: #fdc5f5;
+
+}
+.todoHeadProgr{
+    background-color: #adedf8;
+}
+.todoHeadCmpltd{
+    background-color: #c1ff9b;
+}
+.renderTasks:first-child
+{
+    border-top: none;
+}
+.editMainCont{
+    position: relative;
+}
+.penTrashBox{
+    position: absolute;
+    top: 18px;
+    left: -5pc;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 1;
+    border-radius: 10px;
+}
+.penTrashBoxBoard{
+    background-color: rgb(255, 244, 246);
+}
+#penBox{
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+    padding: .4pc 1.2pc;
+    border-radius: 10px;
+}
+/* .penBox1:hover{
+    background-color: snow;
+} */
+#penBox div{
+    width: 12px;
+    height:12px;
+}
+#penBox p{
+    font-size: small;
+    font-weight: 600;
+    user-select: none;
+}
+#penIcon{
+    fill: black;
+}
+#trashIcon, #delClr{
+    fill: red;
+    color: red;
+}
+.bulkselectedContainer{
+    position: fixed;
+    bottom: 1pc;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #262626;
+    border-radius: 14px;
+    padding: 8px 16px;
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2.5pc;
+}
+.bulkstatusdel{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5pc;
+}
+#bulkstatuslists, #buldDel{
+    border: 1px solid grey;
+    border-radius: 20px;
+}
+#bulkstatuslists p, #buldDel{
+    cursor: pointer;
+    padding: 6px 12px;
+    user-select: none;
+}
+#buldDel{
+    border: 1px solid #d90429;
+    color: #d90429;
+    background-color:#6000004e;
+}
+#buldDel:hover{
+    background-color: rgba(255, 0, 0, 0.159);
+}
+#bulkstatuslists{
+    position: relative;
+}
+.changeStatusList{
+    position: absolute;
+    bottom: 2.8pc;
+    right: 0pc;
+    background-color: #262626;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width:8pc;
+}
+.changeStatusList p{
+    font-size: 14px;
+    border-radius: 15px;
+    padding: 8px 15px;
+    width: 100%;
+    cursor: pointer;
+ }
+ .changeStatusList p:hover{
+    background-color: #333;
+ }
+ .greenTick{
+    fill: green;
+ }
+ .linethru{
+    text-decoration-line: line-through;
+    text-decoration-color: #595959;
+    text-decoration-style:solid;
+ }
+ /* ...........form */
+ .crossIcon{
+    width: 15px;
+    height:15px;
+    cursor: pointer;
+ }
+ .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+ }
+ .taskForm{
+    background-color: #ffffff;
+    position: fixed;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding:10px 12px;
+    width: 30%;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 10;
+ }
+ .taskForm input::placeholder, textarea::placeholder{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color:rgba(0,0,0,0.4);
+ }
+ .taskForm input:focus, textarea:focus{
+    outline: none;
+ }
+ .taskForm input, .taskForm textarea{
+    border: 1px solid lightgray;
+    background-color: #f2f2f27f;
+ }
+ .taskForm textarea{
+    height:7pc;
+    resize: none;
+ }
+ .fromHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin-bottom: 1pc;
+ }
+ .fromHead:after{
+    content: '';
+    width: 104%;
+    position: absolute;
+    border-bottom:1px solid grey;
+    left: -12px;
+    top: 2.5pc;
+ }
+ .formTextInput{
+    border-radius: 7px;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    text-transform: capitalize;
+ }
+ .txtArea{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+ .taskForm form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+ }
+ .formTaskCatBox{
+    display: flex;
+    justify-content: space-between;
+ }
+ .formTaskCat{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:5px;
+    font-size: small;
+ }
+ .formWrkPrsnl{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight:600;
+}
+.formWrkPrsnl input{ 
+    display: none;
+}
+.formWrkPrsnl input[type='radio']:checked + label{ 
+    background-color: #6b0da6;
+    color: #ffffff;
+}
+.perForm, .workForm{
+    border-radius:20px;
+    padding: 2% 10%;
+    border: 1px solid lightgray;
+    cursor: pointer;
+    user-select: none;
+}
+ #formTaskCatHead{
+    color:rgba(0,0,0,0.4); 
+    font-weight:600; 
+ }
+ .formTaskCat input, .formTaskCat select{
+    border: 1px solid lightgray;
+    background-color: #f2f2f27f;
+    padding:2%;
+    border-radius:6px;
+    min-width: 8pc;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+ }
+ .fileDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+ }
+ .fileDiv p{
+    width: 100%;
+    font-size: small;
+ }
+ #selectFile{
+    display: none;
+ }
+ #taskfile{
+    font-size: small;
+    background-color: #f2f2f27f;
+    border-radius: 10px;
+    border: 1px solid grey;
+    width: 100%;
+    text-align: center;
+    padding: 7px 0;
+    cursor: pointer;
+ }
+ #taskfile:hover{
+    background-color: rgba(240, 238, 238, 0.557);
+ }
+ .formBtnDiv{
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    margin-top:15px;
+ }
+ .formBtnDiv button{
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: 700;
+    border: 1px solid lightgray;
+    outline: none;
+    cursor: pointer;
+ }
+ .formCancel{
+    background-color: snow;
+ }
+ .formCreate{
+    background-color: #6b0da6;
+    color: #ffffff;
+ }
+ .formCreate:hover{
+    background-color: #bc75ec;
+ }
+ /* ..................................section 3 board view */
+ .boardSuperContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2pc;
+ }
+ .boardContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+ }
+ .boardSubContainer{
+    padding: .5pc;
+    padding-bottom: 1pc;
+    background-color: #f4f4f9;
+    border-radius: 15px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-height: 80vh;
+    max-height: 80vh;
+    overflow-y: auto;
+
+ }
+ #brdviewHead{
+    --padding-for-boardhead:5px 10px;
+
+    width: fit-content;
+    border-radius: 5px;
+    padding: var(--padding-for-boardhead);
+    text-transform: uppercase;
+    font-weight: 500;
+ }
+ .brdviewHeadToDo{background-color: #fdc5f5;}
+ .brdviewHeadProg{background-color: #adedf8;}
+ .brdviewHeadCompltd{background-color: rgb(163, 212, 163);}
+ .boardTask{
+    --padding-for-boardhead:5px 10px;
+
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: var(--padding-for-boardhead);
+    display: flex;
+    flex-direction: column;
+    gap: 3pc;
+ }
+ .boardTaskSEC{
+    display: flex;
+    justify-content: space-between;
+ }
+ #boardTitle{
+    max-height: 70px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: wrap;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 15px;
+    width: 80%;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+ }
+ .boardTaskSEC2 p{
+    font-size: small;
+    color: #124559;
+ }
+
+ #notaskBoard{
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.nottask{
+    margin-top: 15%;
+}
+.renderDiv{
+    height: 100%;
+}
+.searchImg{
+    width: 50%;
+    height:50%;
+    margin: auto;
+}
+.logoutdivMobile{
+    position: absolute;
+    right: 2%;
+}
+#duedateFilter{
+    display: none;
+}
+
+
+@media (min-width: 501px) { 
+.subsecFilterMobile, .logoutdivMobile, .loginmobile{
+    display: none;
+}
+.taskForm{
+    width: 30pc;
+    top: 50%;
+}
+}
+@media (min-width: 651px) {
+    .taskForm{
+        width: 35pc;
+    }
+}
+@media (min-width: 701px) {
+    .searchMobile{
+        display: none;
+    }
+ }
+
+@media (min-width: 501px) and (max-width: 1100px) { 
+    .section2{
+        padding:1pc 0;
+    }
+    .dashboard{
+        padding: 0 .8pc;
+    }
+    .subsecFilter{
+        /* gap: 5px; */
+        /* flex-direction: column; */
+    }
+    .search{
+        width: 100%;
+    }
+    .searchMobile{
+        margin-top: 1.2pc;
+    }
+    .section2{
+        border-top: none;
+    }
+    
+}
+
+@media (min-width: 501px) and (max-width: 700px) { 
+    .formWrkPrsnl{
+        display: flex;
+        gap: 0px;
+    }
+    .formTaskCatCal{
+        margin-left:2pc;
+    }
+    .searchLAP{
+        display: none;
+    }
+    .search{
+        width:13pc;
+    }
+    .renderTasks{
+        font-size: small;
+    }
+    .addtaskInput{
+        width: 90%;
+    }
+    .addTskInput{
+        margin-left: -2%;
+    }
+    .writetask{
+        padding: .5pc 0 .5pc .5pc;
+    }
+    .addTskwork{
+        padding-left: 3%;
+    }
+    .tasksHead{
+        width:94%;
+        font-size: 14px;
+    }
+    #catgry{
+        margin-right:3%;
+    }
+    #stas{
+        margin-left: 3%;
+    }
+    .searchImg{
+        width: 100%;
+        height:100%;
+    }
+}
+@media (min-width: 701px) and (max-width:999px){
+    #stas{
+        margin-left: 4%;
+    }
+    .tasksHead{
+        width:90%;
+    }
+    .searchImg{
+        width: 100%;
+        height:100%;
+    }
+}
+@media (min-width: 701px){
+    .writetask{
+        padding: .5pc 0 .5pc 1pc;
+    }
+    .addtaskInput{
+        width: 85%;
+    }
+    .addTskCat{
+        margin-right: 3%;
+    }
+    .addTskwork{
+        margin-right: -4%;
+    }
+
+}
+@media (min-width : 1000px){
+    #stas{
+        margin-left: 4%;
+    }
+    .writetask{
+        padding: .5pc 0 .5pc 4pc;
+    }
+    .addTskwork{
+        margin-right: -2%;
+    }
+}
+@media (min-width : 1300px){
+    .addTskCat{
+        margin-right: 0%;
+    }
+    .addTskwork{
+        margin-right: -1%;
+    }
+    .addTskInput{
+        margin-left: -2%;
+    }
+}
+@media (min-width : 1400px){
+    #leftDue{
+        margin-left: 10px;
+    }   
+}
+@media (min-width : 1500px){
+.tasksHead{
+    width:85.5%;
+}
+}
+
+@media (max-width: 700px){
+    .boardSuperContainer{
+        flex-wrap: wrap;
+        gap: 1pc;
+    }
+    .boardSubContainer{
+        min-height: 60vh;
+        max-height: 80vh;
+    }
+    .addcancelsub{
+        gap: 5px;
+        justify-content: center;
+        font-size: 12px;
+        padding: 0 4.7pc;
+        margin-top: 2pc;
+    }
+
+
+}
+
+@media (max-width: 500px) { 
+    #dashName, .mobileSec1, .searchLAP, .tasksHead, .plusAddCont, #checkColn, .txtShow,
+    .addtaskInput, .subsecFilterLap, .noteicondash{
+        display: none;
+    }
+
+    .subsecFilter{
+        gap: 5px;
+        flex-direction: column;
+    }
+    .search{
+        width: 100%;
+    }
+    .searchMobile{
+        margin-top: 1.2pc;
+    }
+    .inptCheck{
+        width: 85%;
+        justify-content: space-between;
+        gap:5px;
+    }
+    #renTitle{
+        width:88%;
+        padding:.5pc 0;
+        font-size: 13px;
+    }
+    .section2{
+        border-top: none;
+        padding: 0;
+        margin-top: 1.5pc;
+    }
+    .dashboard:not(.mobilieProfile){
+        padding: 0 1pc;
+        margin-top: 3.5pc;
+    }
+    .mobilieProfile{
+        background-color: #f1e4fa;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        z-index: 100;
+        padding:.7pc;
+    }
+    .search-addtask{
+        display: flex;
+        width: 100%;
+        justify-content: end;
+    }
+    #addTask{
+        font-size: small;
+        padding: 8px 20px;
+    }
+    .bulkselectedContainer{
+        width: 90%;
+        gap:0pc;
+        justify-content: space-between;
+    }
+    .taskForm{
+        position: fixed;
+        bottom:0%;
+        left:0%;
+        transform: translate(0%, 0%);
+        padding:20px 12px;
+        width: 100%;
+        gap: 20px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius:0;
+    }
+    .fromHead:after{
+        content: '';
+        width: 106%;
+        position: absolute;
+        border-bottom:1px solid grey;
+        left: -10px;
+        top: 2.5pc;
+    }
+    .formTaskCatBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    #editEchTashIcon{
+        width: 12px;
+        height:12px;
+    }
+    #dashTitle{
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .profileImg{
+        width: 30px;
+        height:30px;
+    }
+    .search-input{
+        width: 100%;
+        padding: 2px 0;
+    }
+    .loginmobile{
+        padding: 3px 20px;
+        position: absolute;
+        top: 1%;
+        right:1%;
+        z-index: 101;
+        width: 100px;
+        text-align: center;   
+    }
+    .searchImg{
+        width: 100%;
+        height:100%;
+    }
+    .tickCircle, .greenTick{
+        width: 12px;
+        height:20px;
+    }
+    .disMOB{
+        display: none;
+    }
+}
